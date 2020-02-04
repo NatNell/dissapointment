@@ -31,12 +31,14 @@ function off(){
   brightness = 0;
   print ("MMMMMmmmm");
 }
+
 function touchStarted(){
   on();
   song.play();
 }
 function touchReleased(){
   off();
+  song.stop();
 }
 function togglePlayMode() {
   if (playMode === 'sustain') {
