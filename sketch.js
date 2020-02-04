@@ -31,12 +31,11 @@ function off(){
   brightness = 0;
   print ("MMMMMmmmm");
 }
-
-function mousePressed(){
+function touchStarted(){
   on();
   song.play();
 }
-function mouseReleased(){
+function touchReleased(){
   off();
 }
 function togglePlayMode() {
@@ -46,4 +45,11 @@ function togglePlayMode() {
     playMode = 'sustain';
   }
   sample.playMode(playMode);
+}
+function mousePressed(){
+  on();
+  song.play();
+}
+function mouseReleased(){
+  off();
 }
